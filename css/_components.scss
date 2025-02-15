@@ -1,0 +1,195 @@
+// Стили отдельных компонентов (формы, кнопки, таблицы и т.п.)
+
+.mode-switch {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .mode-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #444;
+    color: #eee;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background 0.2s ease;
+  
+    &:hover {
+      background: #555;
+    }
+  
+    &.active {
+      background: #555;
+    }
+  }
+  
+  .form-group {
+    display: flex;
+
+  
+    label {
+      display: flex;
+
+      align-items: center;
+      width: 40%;
+      padding: 20px 37px 20px 14px;
+
+      font-size: 18px;
+      color: #ECEBBE;
+      background: #232420;
+      white-space: wrap;
+
+    }
+  
+    input {
+      width: 60%;
+      padding: 18px 18px 18px 18px;
+      font-size: 26px;
+      background: #2F312B;
+      color: #eee;
+      border: none;
+      outline: none;
+  
+      &:focus {
+        border-color: #777;
+      }
+    }
+  }
+  
+  .btn {
+
+    padding: 20px 20px;
+    background: linear-gradient(#279FE3, #1C5A7C);
+    border: none;
+    border-radius: 5px;
+    color: #ECEBBE;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+    transition:  0.2s ease;
+    
+    &--red {
+      background: linear-gradient(#FE452C, #BA2101);
+    }
+
+    &:hover:not(:disabled) {
+      opacity: .8;
+    }
+  
+    &:disabled {
+      background: #444;
+      cursor: not-allowed;
+    }
+  }
+  
+  // Блок результатов "МЕТЕО-11"
+  .meteo-result {
+    background: #333;
+    border: 1px solid #555;
+    max-height: 532px;
+    overflow-y: auto;
+    h3 {
+      margin: 0 0 10px 0;
+      font-weight: normal;
+    }
+  
+    .meteo-table {
+      width: 100%;
+      border-collapse: collapse;
+      th, td {
+        border: 1px solid #171816;
+        background-color: #2F312B;
+        padding: 5px;
+        width: 20%;
+        height: 55px;
+        text-align: center;
+
+        &:first-child {
+          width: 10%;
+        }
+      }
+  
+      th {
+        background: #444;
+      }
+    }
+  }
+  
+  // Журнал измерений
+  .log-container {
+    margin-top: 20px;
+  }
+  
+  .log-table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th, td {
+      border: 1px solid #555;
+      padding: 8px;
+      text-align: center;
+    }
+  
+    th {
+      background: #444;
+    }
+  }
+  
+
+.panel-header {
+  background: linear-gradient(#242523, #171816);
+  border-bottom: 2px solid #28A3E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+
+.panel-title {
+  color: #ECEBBE;
+  font-size: 16px;
+
+  span {
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+.meteo-top {
+    display: flex;
+  
+    gap: 2px;
+    height: 30px;
+  div {
+    background-color: #2F312B;
+    flex: 1;
+    font-size: 24px;
+    text-align: center;
+    height: 65px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  margin-bottom: 40px;
+}
+
+.title-items {
+  display: flex;
+  width: 100%;
+}
+
+.title-item {
+  &:first-child {
+    margin-left: 27%;
+  }
+  
+  &:nth-child(2) {
+    margin-left: 26%;
+  }
+
+  &:last-child {
+    margin-left: 28%;
+  }
+}
