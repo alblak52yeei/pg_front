@@ -196,6 +196,8 @@ body {
 
 .log {
   margin-top: 20px;
+  max-height: 725px;
+  overflow: auto;
 }
 .log__table {
   width: 100%;
@@ -205,6 +207,7 @@ body {
   border: 1px solid #555;
   padding: 8px;
   text-align: center;
+  height: 55px;
 }
 .log__cell--header {
   background: #444;

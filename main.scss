@@ -238,7 +238,8 @@ body {
   // Log table
   .log {
     margin-top: 20px;
-  
+    max-height: 725px;
+    overflow: auto;
     &__table {
       width: 100%;
       border-collapse: collapse;
@@ -248,7 +249,8 @@ body {
       border: 1px solid #555;
       padding: 8px;
       text-align: center;
-  
+      height: 55px;
+
       &--header {
         background: #444;
       }
